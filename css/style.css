@@ -1,0 +1,370 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Antonio&display=swap'); /*font-family: 'Antonio', sans-serif;*/
+*{
+    margin: 0;
+    padding: 0;
+    color: #212529;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+
+
+/* .ol_img::after{
+    position: absolute;
+    content: '';
+    width: 100%;
+    top: 0;
+    opacity: 0.4;
+    left: 0;
+    height: 100%;
+    background-color: #333;
+} */
+
+.ol_img img{
+    width: 100%;
+    height: 100%;
+}
+
+.ol_img i{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    color: #fff;
+    font-size: 30px;
+    z-index: 1;
+    cursor: pointer;
+}
+/* html{
+    height: 100000px;
+} */
+.contener{
+    width: 100%;
+    display: flex;
+    transition: all 0.5s ease-in-out;
+    justify-content: flex-start;
+}
+.nav_bar_left{
+    height: 100vh;
+    width: 25%;
+    top: 0;
+    position: sticky;
+    background-color: brown;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+
+.nav_img{
+    width: 150px;
+    height: 150px;
+    background-image: url(../84f69dd2-146b-4bbe-9385-c93b19754069.jpg);
+    border-radius: 50%;
+    background-position: 454px 731px;
+    background-size: cover;
+    margin-bottom:20px ;
+    cursor: pointer;
+}
+.nav_img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.nav_bar_left ul{
+    list-style: none;
+    text-align: center;
+}
+.nav_bar_left ul li{
+    margin: 10px 0;
+}
+
+.nav_bar_left ul li a{
+    font-size: 24px;
+    letter-spacing: 2px;
+    font-family: 'Antonio', sans-serif; 
+    text-decoration: none;
+    color: rgb(196, 189, 189);
+    cursor: pointer;
+}
+
+
+/*        content_left     */
+
+.content_left{
+    width: 70%;
+    margin-left: 40px;
+}
+
+.content_t{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-bottom: 1px solid rgb(177, 176, 176);
+}
+
+.about__me{
+    text-align: left;
+    margin-bottom:40px ;
+}
+.about__me h1{
+    font-size: 70px;
+    text-transform: uppercase;
+    font-family: "Muli", "Segoe UI", Roboto, "Helvetica Neue";
+    letter-spacing: 3px;
+}
+.about__me h1 span{
+    color: red;
+}
+.about__me p{
+
+    text-transform: uppercase;
+    font-family: "Muli", "Segoe UI", Roboto, "Helvetica Neue";
+    letter-spacing: 3px;
+}
+.about__content p{
+    text-transform: capitalize;
+    font-family: "Muli", "Segoe UI", Roboto, "Helvetica Neue";
+    letter-spacing: 1px;
+    line-height: 30px;
+    color: rgb(87, 85, 85);
+}
+
+.about__icon{
+    z-index: -1;
+    margin-top:40px ;
+    padding: 10px;
+    width: 100%;
+}
+
+.about__icon p{
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #333;
+    position: relative;
+    margin: 0 10px 0 0;
+}
+
+.about__icon p i{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+    font-size: 30px;
+}
+
+
+
+.experiece,.education{
+    width: 100%;
+    border-bottom: 1px solid rgb(177, 176, 176);
+}
+
+.experiece h2 , .education h1{
+    font-size: 70px;
+    text-transform: uppercase;
+    font-family: "Muli", "Segoe UI", Roboto, "Helvetica Neue";
+    margin: 20px 0;
+    letter-spacing: 3px;
+}
+
+.dev_ex{
+    position: relative;
+    z-index: -1;
+    width: 100%;
+    padding: 20px 10px;
+    margin: 10px 0;
+}
+
+.dev_ex h1{
+    font-size: 25px;
+    text-transform: uppercase;
+    font-family: "Muli", "Segoe UI", Roboto, "Helvetica Neue";
+    letter-spacing: 2px;
+    margin: 0 0 10px 0  ;
+}
+
+.dev_ex .next__tetl{
+    font-size: 20px;
+    text-transform: uppercase;
+    font-family: "Muli", "Segoe UI", Roboto, "Helvetica Neue";
+    color: gray;
+    letter-spacing: 2px;
+    margin: 0 0 20px 0  ;
+}
+
+.dev_ex p{
+
+    text-transform: capitalize;
+    font-family: "Muli", "Segoe UI", Roboto, "Helvetica Neue";
+    line-height: 25px;
+    color: rgb(87, 85, 85);
+    margin: 20px 0;
+}
+
+.date{
+    position: absolute;
+    right: 0;
+    top: 60px;
+    font-family: "Muli", "Segoe UI", Roboto, "Helvetica Neue";
+    font-size: 18px;
+    color: maroon;
+}
+
+
+.skills{
+    width: 100%;
+    padding: 20px 0;
+    border-bottom: 1px solid rgb(177, 176, 176);
+}
+
+.skills h2{
+    font-size: 70px;
+    text-transform: uppercase;
+    font-family: "Muli", "Segoe UI", Roboto, "Helvetica Neue";
+    margin: 20px 0;
+    letter-spacing: 3px;
+}
+
+.skills p{
+    font-size: 20px;
+    text-transform: uppercase;
+    font-family: "Muli", "Segoe UI", Roboto, "Helvetica Neue";
+    color: rgb(36, 35, 35);
+    letter-spacing: 2px;
+    margin: 0 0 20px 0  
+}
+
+.icon__skills p{
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    position: relative;
+    margin: 0 10px 0 0;
+}
+
+.icon__skills p i{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    color: #333;
+    font-size: 50px;
+}
+
+.skills .span{
+    font-size: 17px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: "Muli", "Segoe UI", Roboto, "Helvetica Neue";
+    color: rgb(36, 35, 35);
+    letter-spacing: 2px;
+    margin: 30px 0 ;
+}
+
+.skills ul{
+    list-style: none;
+}
+
+.skills ul li{
+    padding: 5px 20px;
+    text-transform: capitalize;
+    font-family: "Muli", "Segoe UI", Roboto, "Helvetica Neue";
+    line-height: 25px;
+    color: rgb(87, 85, 85);
+}
+
+.skills ul li i{
+    margin-right: 10px;
+}
+
+.intersts{
+    width: 100%;
+    padding: 20px 0;
+    border-bottom: 1px solid rgb(177, 176, 176);
+}
+
+.intersts h1{
+    font-size: 70px;
+    text-transform: uppercase;
+    font-family: "Muli", "Segoe UI", Roboto, "Helvetica Neue";
+    margin: 20px 0;
+    letter-spacing: 3px;
+}
+
+.intersts p{
+    text-transform: capitalize;
+    font-family: "Muli", "Segoe UI", Roboto, "Helvetica Neue";
+    letter-spacing: 1px;
+    line-height: 30px;
+    margin: 30px 0;
+    color: rgb(87, 85, 85);
+}
+
+.awards{
+    width: 100%;
+    padding: 20px 0;
+    border-bottom: 1px solid rgb(177, 176, 176);
+}
+
+.awards h1{
+    font-size: 70px;
+    text-transform: uppercase;
+    font-family: "Muli", "Segoe UI", Roboto, "Helvetica Neue";
+    margin: 20px 0;
+    letter-spacing: 3px;
+}
+
+.awards ul{
+    list-style: none;
+}
+
+.awards ul li{
+    padding: 5px 20px;
+    text-transform: capitalize;
+    font-family: "Muli", "Segoe UI", Roboto, "Helvetica Neue";
+    line-height: 25px;
+    color: rgb(87, 85, 85);
+}
+
+.awards ul li i{
+    margin-right: 10px;
+}
+
+
+.ol_img{
+    position: absolute;
+    left: 172%;
+    top: 8%;
+    width: 529px;
+    height: 546px;
+    transform: scale(0.5);
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.6s ease-in-out;
+}
+
+.ol_img_c{
+    transform: scale(1);
+    visibility: visible;
+    opacity: 1;
+}
+
+.contener_1{
+    background-color: rgba(19, 18, 18, 0.596);
+}
